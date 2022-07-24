@@ -10,7 +10,7 @@ gem 'puma', '~> 5.6'
 
 gem 'figaro', '~> 1.2'
 
-gem 'zeitwerk', '~> 2.5'
+gem 'zeitwerk', '~> 2.6'
 
 # Saml gems
 gem 'saml_idp'
