@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 git_source(:github) { |repo_name| 'https://github.com/#{repo_name}' }
 
-gem 'hamlit', '~> 2.16'
+gem 'hamlit', '~> 3.0'
 
 gem 'puma', '~> 5.6'
 
