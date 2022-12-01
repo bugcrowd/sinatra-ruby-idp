@@ -17,6 +17,6 @@ gem 'saml_idp'
 gem 'xmlenc'
 
 # Sinatra gems
-gem 'sinatra', '~> 2.2'
-gem 'sinatra-contrib', '~> 2.2'
+gem 'sinatra', '~> 3.0'
+gem 'sinatra-contrib', '~> 3.0'
 gem 'sinatra-reloader', '~> 1.0'
