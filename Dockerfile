@@ -32,7 +32,7 @@ RUN chown -R app_user:app_user ${APP_DIR}
 USER app_user
 
 FROM ruby:3.1.2-alpine
-RUN apk add --no-cache sqlite-dev
+RUN apk add --no-cache sqlite-dev gcompat
 RUN mkdir /app
 WORKDIR /app
 COPY --from=builder /app/public/ ./public

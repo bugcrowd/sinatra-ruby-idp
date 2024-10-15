@@ -7,5 +7,5 @@
   %body{onload: "document.forms[0].submit();", style: "visibility:hidden;"}
     %form{action: saml_acs_url, method: "post"}
       %input{type: "hidden", name: "SAMLResponse", value: @saml_response}
-      %input{type: "hidden", name: "RelayState", value: @relay_state}
+      %input{type: "hidden", name: "RelayState", value: params[:RelayState]}
       %input{type: "submit", value: "Submit"}

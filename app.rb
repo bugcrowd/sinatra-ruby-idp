@@ -56,7 +56,7 @@ class MockSamlIdpApp < Sinatra::Base
   post '/saml-login' do
     decode_request(params[:SAMLRequest])
 
-    @saml_response = encode_response(fake_user)
+    @saml_response = encode_response(fake_user, signed_message: true)
 
     haml :saml_post
   end
