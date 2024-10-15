@@ -10,7 +10,7 @@ import {
   TextInput,
   Title,
 } from "@mantine/core";
-import { getSamlRequest } from "../utils";
+import { getSamlRequest, getRelayState } from "../utils";
 import { Ce, UserCircle } from "tabler-icons-react";
 interface LoginFormProps {
   username?: string;
@@ -31,6 +31,7 @@ const LoginForm: React.FunctionComponent<LoginFormProps> = ({ username }) => {
         onSubmit={() => submitting()}
       >
         <input type="hidden" name="SAMLRequest" value={getSamlRequest()} />
+        <input type="hidden" name="RelayState" value={getRelayState()} />
         <Center>
           <Title order={1}>SAML Mock Identity Provider</Title>
         </Center>

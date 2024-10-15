@@ -24,7 +24,7 @@ https://user-images.githubusercontent.com/783501/168935031-caab559e-7b5d-4056-96
 #### Docker
 
  1. `docker build . -t saml-ruby-idp`
- 2. `docker run --rm -p9292:9292 samp-ruby-idp`
+ 2. `docker run --rm -p9567:9292 saml-ruby-idp`
 
 #### Ruby
 
