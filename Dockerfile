@@ -1,5 +1,5 @@
 FROM ruby:3.1.2-alpine AS builder
-RUN apk add --no-cache nodejs npm bash curl musl-dev libc-dev make gcc sqlite-dev
+RUN apk add --no-cache nodejs npm bash curl musl-dev libc-dev make gcc sqlite-dev gcompat
 ENV APP_DIR=/app
 
 RUN mkdir ${APP_DIR}
